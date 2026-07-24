@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apollo Pharma Hub - 24/7 Digital Pharmacy, Medical Equipment Supply, Cold-Chain Biologics & E-Prescribing. Modern dark neon purple web app.">
+  <meta name="keywords" content="Apollo Pharma, Medical Shop, Pharmacy, Telehealth, E-Prescription, Cold-Chain IoT, Healthcare Supply, Medical Devices, Cart, Order Booking">
+  <title>Apollo Pharma Hub | 24/7 Smart Healthcare</title>
+  
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Subtle Ambient Grid Background -->
+  <div class="grid-background" aria-hidden="true"></div>
+
+  <!-- 1. Navigation Bar (Sticky Header with Cart Action) -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-capsules"></i>
+        </div>
+        <span>Apollo <span class="gradient-text">Pharma</span></span>
+        <span class="status-badge">
+          <span class="status-dot"></span> 24/7 Express Pharmacy Open
+        </span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="#products" class="nav-link" id="nav-products">Medical Products</a></li>
+          <li><a href="#services" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn-trigger" id="cart-trigger" aria-label="Open Shopping Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Cart</span>
+          <span class="cart-count-badge" id="cart-count">0</span>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <div class="hero-pill">
+        <i class="fa-solid fa-shield-heart"></i> Next-Gen Pharmacy & Healthcare Supply Ecosystem
+      </div>
+
+      <h1 class="hero-title">
+        Pioneering Certified <br>
+        <span class="gradient-text">Medical Supply & Smart Pharmacy</span> Solutions
+      </h1>
+
+      <p class="hero-bio">
+        We deliver 100% certified pharmaceutical care, smart diagnostic equipment, and cold-chain temperature-protected biologics with 24/7 express dispatch and real-time order tracking.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary" id="hero-primary-cta">
+          <i class="fa-solid fa-notes-medical btn-icon"></i> Explore Products
+        </a>
+        <a href="#contact" class="btn btn-secondary" id="hero-secondary-cta">
+          <i class="fa-solid fa-file-prescription btn-icon"></i> Upload Prescription / Book
+        </a>
+      </div>
+
+      <!-- Hero Bento Stats Strip -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-number">100K+</div>
+          <div class="stat-label">Prescriptions Dispensed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">99.98%</div>
+          <div class="stat-label">Fulfillment Accuracy Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">15 Min</div>
+          <div class="stat-label">Average Express Dispatch</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24 / 7</div>
+          <div class="stat-label">Licensed Pharmacist Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. About Me / Business Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-tag">
+        <i class="fa-solid fa-user-doctor"></i> Practice & Credentials
+      </div>
+      <h2 class="section-title">About Our <span class="gradient-text">Medical Practice & Technology</span></h2>
+      <p class="section-subtitle">Combining clinical pharmaceutical care with precision medical logistics and e-prescribing.</p>
+
+      <div class="about-bento">
+        <!-- Left Column: Background & Skills Cloud -->
+        <div class="bento-card about-bio-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">
+            Trusted Healthcare Supply & Pharmacy Excellence
+          </h3>
+          <p>
+            Welcome to <strong>Apollo Pharma Hub</strong>. Founded by board-certified pharmacists and healthcare logistics experts, we provide reliable access to authentic medicines, surgical equipment, and health diagnostics.
+          </p>
+          <p>
+            From FDA-regulated prescription fulfillment to IoT-monitored cold-chain vaccine storage, our facility operates around the clock to serve hospitals, clinics, and individual patients across the country.
+          </p>
+          <p>
+            We adhere to strict HIPAA confidentiality protocols, zero-error dispensing practices, and immediate emergency dispatch.
+          </p>
+
+          <!-- Skills & Medical Services Cloud -->
+          <div class="skills-container">
+            <div class="skills-title">
+              <i class="fa-solid fa-kit-medical skill-icon"></i> Core Capabilities & Medical Services
+            </div>
+            <div class="skills-cloud" id="skills-cloud">
+              <span class="skill-badge"><i class="fa-solid fa-prescription-bottle-medical skill-icon"></i> Prescription Fulfillment</span>
+              <span class="skill-badge"><i class="fa-solid fa-headset skill-icon"></i> Tele-Pharmacy Systems</span>
+              <span class="skill-badge"><i class="fa-solid fa-temperature-arrow-down skill-icon"></i> Cold-Chain Logistics</span>
+              <span class="skill-badge"><i class="fa-solid fa-robot skill-icon"></i> Automated Dispensing</span>
+              <span class="skill-badge"><i class="fa-solid fa-stethoscope skill-icon"></i> Medical Equipment Supply</span>
+              <span class="skill-badge"><i class="fa-solid fa-pills skill-icon"></i> Smart Pill Tracking</span>
+              <span class="skill-badge"><i class="fa-solid fa-truck-fast skill-icon"></i> 24/7 Express Delivery</span>
+              <span class="skill-badge"><i class="fa-solid fa-certificate skill-icon"></i> FDA & Regulatory Compliance</span>
+              <span class="skill-badge"><i class="fa-solid fa-user-nurse skill-icon"></i> Health Consultations</span>
+              <span class="skill-badge"><i class="fa-solid fa-flask skill-icon"></i> Custom Compounding</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Styled Pharmacist Headshot -->
+        <div class="bento-card headshot-card">
+          <div class="headshot-wrapper">
+            <img src="C:/Users/heman/.gemini/antigravity-ide/brain/5896e51b-0e5d-4daf-a1cc-f7c8c5941858/headshot_pharmacist_1784916942154.png" 
+                 alt="Chief Pharmacist Portrait" 
+                 class="headshot-img"
+                 onerror="this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop'">
+            <div class="headshot-badge">
+              <i class="fa-solid fa-circle-check"></i> PharmD Board Certified
+            </div>
+          </div>
+          <div class="headshot-info">
+            <h3>Dr. Hemanth Kumar, PharmD</h3>
+            <p>Chief Pharmacist & Medical Director</p>
+            <div style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 0.75rem;">
+              <span class="product-tag"><i class="fa-solid fa-award"></i> 12+ Yrs Clinical Experience</span>
+              <span class="product-tag"><i class="fa-solid fa-shield-halved"></i> HIPAA Verified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Medical Products & Booking Gallery Section -->
+  <section class="section" id="products">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">
+          <i class="fa-solid fa-cart-flatbed"></i> Certified Inventory
+        </div>
+        <h2 class="section-title">Medical Products & <span class="gradient-text">Order Booking</span></h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+          Browse our certified pharmaceuticals, diagnostic devices, and wellness supplies. Add items to your cart or book instant delivery.
+        </p>
+      </div>
+
+      <!-- Gallery Filter Controls -->
+      <div class="gallery-controls">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="prescription">Prescription Rx</button>
+        <button class="filter-btn" data-filter="devices">Health Devices</button>
+        <button class="filter-btn" data-filter="otc">Wellness & OTC</button>
+        <button class="filter-btn" data-filter="emergency">Emergency Care</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-grid">
+        
+        <!-- Product 1: BioShield Digital Blood Pressure Monitor -->
+        <article class="product-card" data-category="devices">
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop" 
+                 alt="Digital Blood Pressure Monitor" 
+                 class="product-img">
+            <span class="product-price-badge">$49.99</span>
+          </div>
+          <div class="product-content">
+            <div class="product-tags">
+              <span class="product-tag">Health Device</span>
+              <span class="product-tag">Bluetooth Sync</span>
+              <span class="product-tag">FDA Approved</span>
+            </div>
+            <h3 class="product-title">Digital Blood Pressure Monitor</h3>
+            <p class="product-desc">
+              Clinical-grade upper arm automatic BP monitor with heart arrhythmia pulse detection and smartphone tracking.
+            </p>
+            <div class="product-actions">
+              <button class="product-btn btn-add-cart" data-name="Digital Blood Pressure Monitor" data-price="49.99">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+              <button class="product-btn btn-quick-book" data-name="Digital Blood Pressure Monitor">
+                <i class="fa-solid fa-calendar-check"></i> Quick Book
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2: UltraCold Vaccine & Biologic Transport Box -->
+        <article class="product-card" data-category="emergency">
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop" 
+                 alt="Cold-Chain Temperature Storage Box" 
+                 class="product-img">
+            <span class="product-price-badge">$129.50</span>
+          </div>
+          <div class="product-content">
+            <div class="product-tags">
+              <span class="product-tag">Cold-Chain IoT</span>
+              <span class="product-tag">-20°C Guard</span>
+              <span class="product-tag">Emergency</span>
+            </div>
+            <h3 class="product-title">Cold-Chain Biologic Transport Cooler</h3>
+            <p class="product-desc">
+              IoT temperature-monitored medical transport container for insulin, vaccines, and sensitive biologicals.
+            </p>
+            <div class="product-actions">
+              <button class="product-btn btn-add-cart" data-name="Cold-Chain Biologic Transport Cooler" data-price="129.50">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+              <button class="product-btn btn-quick-book" data-name="Cold-Chain Biologic Transport Cooler">
+                <i class="fa-solid fa-calendar-check"></i> Quick Book
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3: Smart Oximeter & Vitals Sensor -->
+        <article class="product-card" data-category="devices">
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+                 alt="Fingertip Pulse Oximeter" 
+                 class="product-img">
+            <span class="product-price-badge">$24.99</span>
+          </div>
+          <div class="product-content">
+            <div class="product-tags">
+              <span class="product-tag">Pulse Oximeter</span>
+              <span class="product-tag">OLED Display</span>
+              <span class="product-tag">SpO2 Tracker</span>
+            </div>
+            <h3 class="product-title">Fingertip Pulse Oximeter & SpO2</h3>
+            <p class="product-desc">
+              Instant oxygen saturation and pulse rate reader with dual-color OLED screen and automatic sleep shutoff.
+            </p>
+            <div class="product-actions">
+              <button class="product-btn btn-add-cart" data-name="Fingertip Pulse Oximeter" data-price="24.99">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+              <button class="product-btn btn-quick-book" data-name="Fingertip Pulse Oximeter">
+                <i class="fa-solid fa-calendar-check"></i> Quick Book
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4: Advanced First Aid & Trauma Response Kit -->
+        <article class="product-card" data-category="emergency">
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=800&auto=format&fit=crop" 
+                 alt="First Aid Kit Emergency" 
+                 class="product-img">
+            <span class="product-price-badge">$39.00</span>
+          </div>
+          <div class="product-content">
+            <div class="product-tags">
+              <span class="product-tag">First Aid</span>
+              <span class="product-tag">150+ Pieces</span>
+              <span class="product-tag">Surgical Steel</span>
+            </div>
+            <h3 class="product-title">Emergency First Aid & Trauma Kit</h3>
+            <p class="product-desc">
+              Comprehensive 150-piece hospital-grade emergency response kit for homes, clinics, and workplace safety.
+            </p>
+            <div class="product-actions">
+              <button class="product-btn btn-add-cart" data-name="Emergency First Aid & Trauma Kit" data-price="39.00">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+              <button class="product-btn btn-quick-book" data-name="Emergency First Aid & Trauma Kit">
+                <i class="fa-solid fa-calendar-check"></i> Quick Book
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5: Prescription Refill Fulfillment Service -->
+        <article class="product-card" data-category="prescription">
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop" 
+                 alt="Prescription Medicine Bottles" 
+                 class="product-img">
+            <span class="product-price-badge">$15.00</span>
+          </div>
+          <div class="product-content">
+            <div class="product-tags">
+              <span class="product-tag">Rx Prescription</span>
+              <span class="product-tag">Pharmacist Checked</span>
+              <span class="product-tag">Same-Day</span>
+            </div>
+            <h3 class="product-title">E-Prescription Refill Service</h3>
+            <p class="product-desc">
+              Direct doctor-to-pharmacy refill processing with automatic insurance co-pay calculation and delivery.
+            </p>
+            <div class="product-actions">
+              <button class="product-btn btn-add-cart" data-name="E-Prescription Refill Service" data-price="15.00">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+              <button class="product-btn btn-quick-book" data-name="E-Prescription Refill Service">
+                <i class="fa-solid fa-calendar-check"></i> Quick Book
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6: High-Potency Vitamin & Immune Pack -->
+        <article class="product-card" data-category="otc">
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=800&auto=format&fit=crop" 
+                 alt="Vitamin & Immune Supplement Pack" 
+                 class="product-img">
+            <span class="product-price-badge">$29.99</span>
+          </div>
+          <div class="product-content">
+            <div class="product-tags">
+              <span class="product-tag">Wellness</span>
+              <span class="product-tag">Vitamin C & Zinc</span>
+              <span class="product-tag">Immune Support</span>
+            </div>
+            <h3 class="product-title">Immune Support Supplement Pack</h3>
+            <p class="product-desc">
+              High-absorption Vitamin D3, Zinc, and Liposomal Vitamin C formula for daily antioxidant defense.
+            </p>
+            <div class="product-actions">
+              <button class="product-btn btn-add-cart" data-name="Immune Support Supplement Pack" data-price="29.99">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+              <button class="product-btn btn-quick-book" data-name="Immune Support Supplement Pack">
+                <i class="fa-solid fa-calendar-check"></i> Quick Book
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Services & Features Section -->
+  <section class="section" id="services" style="background: rgba(12, 11, 18, 0.4);">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">
+          <i class="fa-solid fa-hospital"></i> Comprehensive Healthcare
+        </div>
+        <h2 class="section-title">Specialized <span class="gradient-text">Pharmacy Services</span></h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+          From precision chronic care management to automated dose packaging and emergency supply lines.
+        </p>
+      </div>
+
+      <div class="hero-stats" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+        <div class="stat-card" style="text-align: left; padding: 2rem;">
+          <i class="fa-solid fa-pills" style="font-size: 2rem; color: var(--accent-purple-glow); margin-bottom: 1rem;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Automated Pill Packaging</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            Pre-sorted time-stamped dose pouches ensuring zero dosing errors for complex daily medication regimens.
+          </p>
+        </div>
+
+        <div class="stat-card" style="text-align: left; padding: 2rem;">
+          <i class="fa-solid fa-temperature-arrow-down" style="font-size: 2rem; color: var(--accent-purple-glow); margin-bottom: 1rem;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Cold-Chain Storage Safeguard</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            Sub-zero IoT sensor monitoring ensuring temperature sensitive insulin and vaccines remain 100% potent.
+          </p>
+        </div>
+
+        <div class="stat-card" style="text-align: left; padding: 2rem;">
+          <i class="fa-solid fa-headset" style="font-size: 2rem; color: var(--accent-purple-glow); margin-bottom: 1rem;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">24/7 Tele-Pharmacist Consult</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            Encrypted video and phone consultations for drug interaction checks, dosage advice, and side effect guidance.
+          </p>
+        </div>
+
+        <div class="stat-card" style="text-align: left; padding: 2rem;">
+          <i class="fa-solid fa-truck-fast" style="font-size: 2rem; color: var(--accent-purple-glow); margin-bottom: 1rem;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">15-Min Express Dispatch</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;">
+            Rapid courier dispatch network delivering urgent medications directly to homes, clinics, and care facilities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Contact & Prescription Upload Section -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <div style="text-align: center;">
+        <div class="section-tag">
+          <i class="fa-solid fa-paper-plane"></i> Contact & Support
+        </div>
+        <h2 class="section-title">Connect With Our <span class="gradient-text">Pharmacy Team</span></h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+          Have prescription inquiries, medical order requests, or bulk equipment questions? Send us a message.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Full Name *</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Email Address *</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="sarah@example.com" required>
+          </div>
+
+          <div class="form-group form-full">
+            <label class="form-label" for="contact-subject">Subject / Product Inquiry</label>
+            <input type="text" id="contact-subject" class="form-input" placeholder="Prescription Refill / Device Inquiry / Emergency Order">
+          </div>
+
+          <div class="form-group form-full">
+            <label class="form-label" for="contact-message">Message *</label>
+            <textarea id="contact-message" class="form-textarea" placeholder="Provide details regarding your prescription, medical order, or question..." required></textarea>
+          </div>
+
+          <div class="form-full" style="text-align: center; margin-top: 1rem;">
+            <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="min-width: 220px;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+        </form>
+
+        <!-- Social Icon Links -->
+        <div class="social-links-wrapper">
+          <div class="social-title">Direct Pharmacy Channels & Social Links</div>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-link" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter / X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="mailto:support@apollopharma.com" class="social-link" title="Email Us">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/15550192834" target="_blank" rel="noopener" class="social-link" title="WhatsApp 24/7">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Drawer Slide-out Modal -->
+  <div class="cart-drawer-backdrop" id="cart-drawer">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3 class="cart-title"><i class="fa-solid fa-cart-shopping" style="color:var(--accent-purple-glow);"></i> Medical Cart</h3>
+        <button class="cart-close-btn" id="cart-close-btn" aria-label="Close Cart">&times;</button>
+      </div>
+
+      <div class="cart-items-body" id="cart-items-body">
+        <!-- Cart Items Injected Dynamically -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Total:</span>
+          <span id="cart-subtotal-val">$0.00</span>
+        </div>
+        <button class="btn btn-primary" onclick="handleCartCheckout()" style="width: 100%;">
+          <i class="fa-solid fa-credit-card"></i> Book Order & Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Product Booking Modal -->
+  <div class="modal-backdrop" id="booking-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="booking-modal-close" aria-label="Close Booking Modal">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--accent-purple-glow);">
+        <i class="fa-solid fa-calendar-check"></i> Book Medical Order
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+        Reserving item for instant dispatch & pharmacist review.
+      </p>
+
+      <form id="booking-form">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label">Selected Item</label>
+          <input type="text" id="booking-item-name" class="form-input" readonly style="background: rgba(255,255,255,0.05); color: var(--accent-purple-glow); font-weight:700;">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="booking-customer-name">Your Full Name *</label>
+          <input type="text" id="booking-customer-name" class="form-input" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="booking-phone">Phone / WhatsApp *</label>
+          <input type="tel" id="booking-phone" class="form-input" placeholder="+1 (555) 000-0000" required>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label class="form-label" for="booking-delivery">Delivery Option</label>
+          <select id="booking-delivery" class="form-input">
+            <option value="express">15-Min Express Home Delivery</option>
+            <option value="standard">Same-Day Standard Delivery</option>
+            <option value="pickup">24/7 Smart Pharmacy Kiosk Pickup</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fa-solid fa-check-circle"></i> Confirm Booking Order
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- 7. Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-text">
+        © 2026 <strong>Apollo Pharma Hub</strong>. All rights reserved. Certified healthcare excellence.
+      </div>
+      <a href="#navbar" class="back-to-top" id="back-to-top-btn">
+        Back to top <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
